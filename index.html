@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модальное окно</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Кнопка для открытия модального окна -->
+    <button id="openModal">Открыть форму</button>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="closeBtn">&times;</span>
+            <h2>Заявка на регистрацию для мероприятия</h2>
+
+            <!-- Форма -->
+            <form>
+                <label>Тип мероприятия:</label>
+                <select>
+                    <option>Выберите тип</option>
+                    <option>Семинар</option>
+                    <option>Конференция</option>
+                </select>
+
+                <label>ФИО:</label>
+                <input type="text" placeholder="Иванов Иван Иванович">
+
+                <label>Email:</label>
+                <input type="email" placeholder="example@mail.com">
+
+                <label>Телефон:</label>
+                <input type="tel" placeholder="+7 (999) 999-99-99">
+
+                <label>Предпочитаемый вид связи:</label>
+                <select>
+                    <option>Telegram</option>
+                    <option>VK</option>
+                    <option>WhatsApp</option>
+                </select>
+
+                <button type="button" class="btn back">Назад</button>
+                <button type="submit" class="btn next">Дальше</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
